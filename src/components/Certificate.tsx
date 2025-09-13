@@ -4,6 +4,7 @@ import DateComponent from "./DateComponent";
 import YearComponent from "./YearComponent";
 
 import signature from "../assets/signature.png";
+import CommunityLeadSignature from "../assets/signatureLead.png";
 
 const Certificate: React.FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -113,7 +114,7 @@ const Certificate: React.FC = () => {
           </div>
 
           {/* Message */}
-          <p className="text-xs sm:text-sm md:text-lg leading-relaxed px-4 mb-8">
+          <p className="text-xs sm:text-sm md:text-lg leading-relaxed px-4 mb-4">
             Congratulations on successfully completing the AI RAG Bootcamp 2025.
             This achievement highlights your dedication, discipline, and
             commitment to mastering advanced concepts in Retrieval-Augmented
@@ -122,26 +123,32 @@ const Certificate: React.FC = () => {
             future of AI.
           </p>
 
-          {/* Bottom Row */}
-          <div className="flex justify-between items-center w-full px-6 mt-auto">
-            {/* Left */}
-            <div className="flex flex-col items-center">
-              <span className="text-xs sm:text-sm md:text-lg font-medium">
-                NSK.AI
-              </span>
-              <div className="h-px bg-black w-full mt-1"></div>
-              <span className="text-xs sm:text-sm">Organized by:</span>
-            </div>
-
+          <div className="flex items-center justify-center">
             {/* Center */}
             <img
               src="/certsvg.svg"
               alt="Certificate Icon"
               className="w-10 sm:w-16 md:w-20"
             />
+          </div>
+
+          {/* Bottom Row */}
+          <div className="flex justify-between items-center w-full px-6 mt-auto">
+            {/* Left */}
+            <div className="flex flex-col items-center max-w-sm">
+              <img
+                width={400}
+                src={CommunityLeadSignature}
+                alt="Signature for NSK.AI Founder"
+              />
+              <div className="h-px bg-black w-full mt-1"></div>
+              <span className="text-xs sm:text-sm md:text-lg font-medium">
+                COMMUNITY LEAD, Chukwuebuka Chukwudi
+              </span>
+            </div>
 
             {/* Right */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center max-w-sm">
               <img
                 width={100}
                 src={signature}
