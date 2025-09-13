@@ -103,7 +103,7 @@ const Certificate: React.FC = () => {
           </div>
 
           {/* Name */}
-          <div className="w-full flex flex-col items-center mb-8">
+          <div className="w-full flex flex-col items-center mb-2">
             <h2
               className="text-xl sm:text-3xl md:text-5xl italic font-semibold mb-2"
               style={{ fontFamily: "Great Vibes" }}
