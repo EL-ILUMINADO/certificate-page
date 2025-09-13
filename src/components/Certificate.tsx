@@ -141,9 +141,9 @@ const Certificate: React.FC = () => {
                 src={CommunityLeadSignature}
                 alt="Signature for NSK.AI Founder"
               />
-              <div className="h-px bg-black w-full mt-1"></div>
+              <div className="h-px bg-black w-50 mt-1"></div>
               <span className="text-xs sm:text-sm md:text-lg font-medium">
-                COMMUNITY LEAD, Chukwuebuka Chukwudi
+                COMMUNITY LEAD, <br /> Chukwuebuka Chukwudi
               </span>
             </div>
 
@@ -154,9 +154,9 @@ const Certificate: React.FC = () => {
                 src={signature}
                 alt="Signature for NSK.AI Founder"
               />
-              <div className="h-px bg-black w-full mt-1"></div>
+              <div className="h-px bg-black w-50 mt-1"></div>
               <span className="text-xs sm:text-sm md:text-lg font-medium">
-                FOUNDER, Ifeanyi Okala
+                FOUNDER, <br /> Ifeanyi Okala
               </span>
               {/* <div className="h-px bg-black w-full mt-1"></div>
               <span className="text-xs sm:text-sm">Awarded by:</span> */}
