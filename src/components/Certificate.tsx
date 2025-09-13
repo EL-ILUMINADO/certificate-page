@@ -3,6 +3,8 @@ import { useReactToPrint } from "react-to-print";
 import DateComponent from "./DateComponent";
 import YearComponent from "./YearComponent";
 
+import signature from "../assets/signature.png";
+
 const Certificate: React.FC = () => {
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -71,7 +73,7 @@ const Certificate: React.FC = () => {
           }}
         >
           {/* Top Row */}
-          <div className="w-full flex justify-between items-center px-6 mb-16 md:mb-24">
+          <div className="w-full flex justify-between items-center px-6 mb-10 md:mb-16">
             <span className="text-xs sm:text-sm md:text-lg font-medium">
               <DateComponent />
             </span>
@@ -87,6 +89,10 @@ const Certificate: React.FC = () => {
 
           {/* Title */}
           <div className="mb-6">
+            {/* Certificate ID */}
+            <p className="text-[10px] mt-2 text-gray-600">
+              CERTIFICATE ID: {certificateId}
+            </p>
             <h1 className="text-lg sm:text-3xl md:text-5xl font-bold font-accent">
               Certificate of Achievement
             </h1>
@@ -108,22 +114,16 @@ const Certificate: React.FC = () => {
 
           {/* Message */}
           <p className="text-xs sm:text-sm md:text-lg leading-relaxed px-4 mb-8">
-            Congratulations on Successfully Completing the AI RAG Bootcamp 2025
-            We extend our sincere commendations to you on this remarkable
-            achievement. Over the past six weeks, you have demonstrated not only
-            the discipline to master advanced concepts in Retrieval-Augmented
-            Generation (RAG) and artificial intelligence, but also the
-            commitment to uphold the highest standards of ethics and responsible
-            innovation. This accomplishment reflects your perseverance,
-            intellectual curiosity, and readiness to contribute meaningfully to
-            the rapidly evolving field of AI. As you move forward, may the
-            skills and insights you have gained here empower you to shape the
-            future with knowledge, integrity, and impact. This certificate is a
-            testament of your efforts.
+            Congratulations on successfully completing the AI RAG Bootcamp 2025.
+            This achievement highlights your dedication, discipline, and
+            commitment to mastering advanced concepts in Retrieval-Augmented
+            Generation (RAG) and artificial intelligence. May the knowledge and
+            skills you have gained empower you to contribute meaningfully to the
+            future of AI.
           </p>
 
           {/* Bottom Row */}
-          <div className="flex justify-between items-end w-full px-6 mt-auto">
+          <div className="flex justify-between items-center w-full px-6 mt-auto">
             {/* Left */}
             <div className="flex flex-col items-center">
               <span className="text-xs sm:text-sm md:text-lg font-medium">
@@ -142,18 +142,19 @@ const Certificate: React.FC = () => {
 
             {/* Right */}
             <div className="flex flex-col items-center">
-              <span className="text-xs sm:text-sm md:text-lg font-medium">
-                FOUNDER, NSK.AI
-              </span>
+              <img
+                width={100}
+                src={signature}
+                alt="Signature for NSK.AI Founder"
+              />
               <div className="h-px bg-black w-full mt-1"></div>
-              <span className="text-xs sm:text-sm">Awarded by:</span>
+              <span className="text-xs sm:text-sm md:text-lg font-medium">
+                FOUNDER, Ifeanyi Okala
+              </span>
+              {/* <div className="h-px bg-black w-full mt-1"></div>
+              <span className="text-xs sm:text-sm">Awarded by:</span> */}
             </div>
           </div>
-
-          {/* Certificate ID */}
-          <p className="text-[10px] mt-2 text-gray-600">
-            CERTIFICATE ID: {certificateId}
-          </p>
         </div>
       </div>
     </section>
