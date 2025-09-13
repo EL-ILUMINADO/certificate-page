@@ -143,7 +143,7 @@ const Certificate: React.FC = () => {
               />
               <div className="h-px bg-black w-50 mt-1"></div>
               <span className="text-xs sm:text-sm md:text-lg font-medium">
-                COMMUNITY LEAD, <br /> Chukwuebuka Chukwudi
+                Community Lead, <br /> Chukwuebuka Chukwudi
               </span>
             </div>
 
@@ -156,7 +156,7 @@ const Certificate: React.FC = () => {
               />
               <div className="h-px bg-black w-50 mt-1"></div>
               <span className="text-xs sm:text-sm md:text-lg font-medium">
-                FOUNDER, <br /> Ifeanyi Okala
+                Founder/Director, <br /> Ifeanyi Okala
               </span>
               {/* <div className="h-px bg-black w-full mt-1"></div>
               <span className="text-xs sm:text-sm">Awarded by:</span> */}
