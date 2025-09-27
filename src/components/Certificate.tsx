@@ -25,7 +25,7 @@ const Certificate: React.FC = () => {
   }, []);
 
   return (
-    <section id="certificate-section" className="text-center py-16">
+    <section id="certificate-section" className="text-center py-16 px-4">
       <h2 className="text-3xl font-bold mb-4 text-[#ff0004]">
         Your Certificate of Completion
       </h2>
@@ -115,7 +115,6 @@ const Certificate: React.FC = () => {
 
           {/* Message */}
           <p className="text-xs sm:text-sm md:text-lg leading-relaxed px-4 mb-4">
-            Congratulations on successfully completing the AI RAG Bootcamp 2025.
             This achievement highlights your dedication, discipline, and
             commitment to mastering advanced concepts in Retrieval-Augmented
             Generation (RAG) and artificial intelligence. May the knowledge and
@@ -148,7 +147,7 @@ const Certificate: React.FC = () => {
             </div>
 
             {/* Right */}
-            <div className="flex flex-col items-center max-w-sm">
+            <div className="flex flex-col items-center w-1/2">
               <img
                 width={100}
                 src={signature}
